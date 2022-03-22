@@ -34,9 +34,10 @@ function Dashboard() {
     return <Spinner />
   }
 
+
   return (
-	<>
-    <section className="heading">
+      <>
+      <section className="heading">
       <h1>Welcome {user && user.name}</h1>
       <p>Goals Dashboard</p>
       </section>
@@ -52,7 +53,7 @@ function Dashboard() {
         ) : 
         (<h3>'You have not set any goals.'</h3>)}
       </section>
-    </>
+      </>
   )
 }
 export default Dashboard

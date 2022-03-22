@@ -8,6 +8,7 @@ function GoalItem({ goal }) {
 
   return (
 	<div className="goal">
+		<button className='btn btn-block'>Update</button>
 		<div>
 			{new Date(goal.createdAt).toLocaleString('en-US')}
 		</div>
