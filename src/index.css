@@ -90,6 +90,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  margin: auto;
 }
 
 .goal {
@@ -97,6 +98,10 @@ h3 {
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
+}
+
+.goal-text {
+  padding-bottom: .5rem;
 }
 
 .goal .close {
@@ -110,7 +115,7 @@ h3 {
 
 .form,
 .content {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -163,6 +168,10 @@ h3 {
 .btn-block {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.btn-update {
+  margin: .5rem;
 }
 
 .btn:hover {

@@ -8,11 +8,11 @@ function GoalItem({ goal }) {
 
   return (
 	<div className="goal">
-		<button className='btn btn-block'>Update</button>
-		<div>
+		<button className='btn btn-update'>Update</button>
+		<div className='goal-text'>
+		<h2>{goal.text}</h2>
 			{new Date(goal.createdAt).toLocaleString('en-US')}
 		</div>
-		<h2>{goal.text}</h2>
 		<button onClick={() => dispatch(deleteGoal(goal._id))} 
 		className="close">X</button>
 	</div>
