@@ -1,14 +1,17 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import GoalForm from '../components/GoalForm'
 import GoalItem from '../components/GoalItem'
+import UpdateGoalModal from '../components/UpdateGoalModal'
 import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
 
 function Dashboard() {
   const navigate = useNavigate()
   const dispatch = useDispatch()
+
+  const [show, setShow] = useState(false)
 
   const { user } = useSelector((state) => state.auth)
   const { goals, isLoading, isError, message } = useSelector((state) => 
@@ -52,6 +55,7 @@ function Dashboard() {
           </div>
         ) : 
         (<h3>'You have not set any goals.'</h3>)}
+        <UpdateGoalModal show={show}/>
       </section>
       </>
   )
