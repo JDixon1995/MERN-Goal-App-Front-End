@@ -33,6 +33,7 @@ h2,
 h3 {
   font-weight: 600;
   margin-bottom: 10px;
+  font-size: medium;
 }
 
 .container {
@@ -102,6 +103,7 @@ h3 {
 
 .goal-text {
   padding-bottom: .5rem;
+  font-size: small;
 }
 
 .goal .close {
