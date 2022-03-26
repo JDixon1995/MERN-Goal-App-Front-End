@@ -7,26 +7,20 @@ function updateGoalModal({ show, handleClose }) {
 	}
 
   return (
-	<>
-	<Modal.Dialog show={show} onHide={handleClose}>
-		<Form>
-  			<Modal.Header closeButton>
-    			<Modal.Title>Update Goal</Modal.Title>
-  			</Modal.Header>
-  		<Modal.Body>
-    		<Form.Group>
-				<Form.Label>Task</Form.Label>
-				<Form.Control type='text' required />
-			</Form.Group>
-  		</Modal.Body>
-  			<Modal.Footer>
-    			<Button variant="secondary">Close</Button>
-    			<Button variant="primary" type='submit'>Save changes</Button>
-  			</Modal.Footer>
+	<Modal show={show} onHide={handleClose} >
+		<Form onSubmit={handleSubmit}>
+			<Modal.Header closeButton>
+				<Modal.Title>Update Goal</Modal.Title>
+			</Modal.Header>
+			<Modal.Body>
+				<Form.Group className='mb-3' controlId='task'>
+					<Form.Label>Task</Form.Label>
+					<Form.Control type='text' required />
+				</Form.Group>
+				<Button>Update Task</Button>
+			</Modal.Body>
 		</Form>
-	</Modal.Dialog>
-
-	</>
+	</Modal>
   )
 }
 export default updateGoalModal

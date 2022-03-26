@@ -6,6 +6,7 @@ import GoalItem from '../components/GoalItem'
 import UpdateGoalModal from '../components/UpdateGoalModal'
 import Spinner from '../components/Spinner'
 import { getGoals, reset } from '../features/goals/goalSlice'
+import "bootstrap/dist/css/bootstrap.min.css"
 
 function Dashboard() {
   const navigate = useNavigate()
