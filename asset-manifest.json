@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.72e7435e.css",
-    "main.js": "/static/js/main.002c5f29.js",
-    "index.html": "/index.html",
-    "main.72e7435e.css.map": "/static/css/main.72e7435e.css.map",
-    "main.002c5f29.js.map": "/static/js/main.002c5f29.js.map"
+    "main.css": "/MERN-Goal-App-Front-End/static/css/main.72e7435e.css",
+    "main.js": "/MERN-Goal-App-Front-End/static/js/main.002c5f29.js",
+    "index.html": "/MERN-Goal-App-Front-End/index.html",
+    "main.72e7435e.css.map": "/MERN-Goal-App-Front-End/static/css/main.72e7435e.css.map",
+    "main.002c5f29.js.map": "/MERN-Goal-App-Front-End/static/js/main.002c5f29.js.map"
   },
   "entrypoints": [
     "static/css/main.72e7435e.css",
