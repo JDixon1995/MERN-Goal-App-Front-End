@@ -1,7 +1,6 @@
 {
   "name": "front-end",
   "version": "0.1.0",
-  "proxy": "https://merngoaltracker.herokuapp.com/",
   "private": true,
   "homepage": "https://JDixon1995.github.io",
   "dependencies": {
